@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+                android:id="@+id/nav_new_word"
+                android:icon="@drawable/ic_a"
+                android:title="@string/menu_current_word"/>
+        <item
+                android:id="@+id/nav_list_words_vievs"
+                android:icon="@drawable/ic_viewed"
+                android:title="@string/menu_list_words_vievs"/>
+        <item
+                android:id="@+id/nav_list_words_like"
+                android:icon="@drawable/ic_like"
+                android:title="@string/menu_list_words_like"/>
+        <item
+                android:id="@+id/nav_list_words_studied"
+                android:icon="@drawable/ic_studied"
+                android:title="@string/menu_list_words_studied"/>
+        <item
+                android:id="@+id/nav_list_words_difficult"
+                android:icon="@drawable/ic_difficult"
+                android:title="@string/menu_list_words_difficult"/>
+        <item
+                android:id="@+id/nav_list_words_day"
+                android:icon="@drawable/ic_day"
+                android:title="@string/menu_list_words_day"/>
+        <item
+                android:id="@+id/nav_list_words_all"
+                android:icon="@drawable/ic_all"
+                android:title="@string/menu_list_words_all"/>
+        <item
+                android:id="@+id/nav_test_word"
+                android:icon="@drawable/ic_test"
+                android:title="@string/menu_test_word"/>
+        <item
+                android:id="@+id/nav_calendar"
+                android:icon="@drawable/ic_calendar"
+                android:title="@string/menu_calendar"/>
+        <item
+                android:id="@+id/nav_tools"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="@string/menu_tools"/>
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                    android:id="@+id/nav_share"
+                    android:icon="@drawable/ic_menu_share"
+                    android:title="@string/menu_share"/>
+            <item
+                    android:id="@+id/nav_send"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="@string/menu_send"/>
+        </menu>
+    </item>
+
+</menu>

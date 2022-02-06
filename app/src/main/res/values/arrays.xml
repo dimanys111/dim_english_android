@@ -1,0 +1,38 @@
+<resources>
+
+    <string-array name="times">
+        <item>2 мин</item>
+        <item>10 мин</item>
+        <item>20 мин</item>
+        <item>30 мин</item>
+        <item>1 час</item>
+        <item>2 час</item>
+        <item>3 час</item>
+        <item>5 час</item>
+    </string-array>
+
+    <string-array name="times_val">
+        <item>2</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+        <item>180</item>
+        <item>300</item>
+    </string-array>
+
+
+    <string-array name="entries">
+        <item>Choose me!</item>
+        <item>No, me!</item>
+        <item>What about me?!</item>
+    </string-array>
+
+    <string-array name="entry_values">
+        <item>alpha</item>
+        <item>beta</item>
+        <item>charlie</item>
+    </string-array>
+
+</resources>

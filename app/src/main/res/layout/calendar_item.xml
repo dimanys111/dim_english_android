@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:orientation="vertical"
+	android:gravity="center"
+    android:background="@drawable/list_item_background"    
+    >
+<TextView
+		android:id="@+id/date"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textSize="14sp"
+		    android:textStyle="bold"
+		    android:textColor="@color/text_color"
+		    >
+</TextView>
+
+	<TextView
+			android:id="@+id/text_word_cal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/text_color"
+			android:gravity="center"
+			android:textSize="10sp"
+			tools:ignore="SmallSp">
+
+	</TextView>
+</LinearLayout>

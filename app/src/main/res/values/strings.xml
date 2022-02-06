@@ -1,0 +1,101 @@
+<resources>
+    <string name="app_name">Daily Words</string>
+    <string name="navigation_drawer_open">Панелька откройся</string>
+    <string name="navigation_drawer_close">Закройся</string>
+    <string name="nav_header_desc">app</string>
+    <string name="action_settings">Настройки</string>
+
+    <string name="menu_list_words_all">Все сова</string>
+    <string name="menu_list_words_vievs">Просмотренные</string>
+    <string name="menu_list_words_like">Любимые</string>
+    <string name="menu_list_words_day">Слова дня</string>
+    <string name="menu_list_words_studied">Изученные</string>
+    <string name="menu_list_words_difficult">Трудные</string>
+    <string name="menu_current_word">Текущее слово</string>
+    <string name="menu_test_word">Проверь себя</string>
+    <string name="menu_calendar">Календарь</string>
+    <string name="menu_tools">Настройки</string>
+
+    <string name="menu_share">1</string>
+    <string name="menu_send">2</string>
+
+    <string name="material_calendar_today_button">Сегодня</string>
+    <string name="material_calendar_positive_button">OK</string>
+    <string name="material_calendar_negative_button">Cancel</string>
+
+    <string name="black">Black</string>
+    <string name="red">Red</string>
+    <string name="green">Green</string>
+    <string name="blue">Blue</string>
+    <string name="ok">Ok</string>
+
+
+    <!--This section is for preferences that contain a widget in their layout -->
+    <string name="widgets"></string>
+
+    <string name="title_cb_notif_visib">Показавать уведомления</string>
+    <string name="title_cb_notif_sound">Звук уведомления</string>
+
+    <string name="title_switch_sound_word">Звук текущего слова</string>
+    <string name="summary_switch_sound_word">Вкл/Выкл звук слова</string>
+
+    <string name="title_switch_sound_every_word">Звук каждого слова</string>
+    <string name="summary_switch_sound_every_word">Вкл/Выкл звук слова</string>
+
+    <string name="title_list_time_notif_show">Период показа уведомлений</string>
+
+    <string name="title_seekbar_time_notif_min">Начало уведомлений</string>
+    <string name="title_seekbar_time_notif_max">Конец уведомлений</string>
+
+    <!--This section is for preferences that launch a dialog to edit the preference -->
+    <string name="dialogs">Dialogs</string>
+
+    <string name="title_edittext_preference">EditText preference</string>
+    <string name="dialog_title_edittext_preference">This title can be changed!</string>
+
+    <string name="title_list_preference">List preference</string>
+    <string name="dialog_title_list_preference">Choose one option!</string>
+
+    <string name="title_multi_list_preference">Multi-select list preference</string>
+    <string name="summary_multi_list_preference">Shows a dialog with multiple choice options</string>
+    <string name="dialog_title_multi_list_preference">Choose some options!</string>
+
+    <!--This section is for advanced attributes-->
+    <string name="advanced_attributes">Advanced attributes</string>
+
+    <string name="title_expandable_preference">Expandable preference group</string>
+    <string name="summary_expandable_preference">This group shows one item and collapses the rest into the advanced button below</string>
+
+    <string name="title_intent_preference">Intent preference</string>
+    <string name="summary_intent_preference">Launches an intent when pressed</string>
+
+    <string name="title_parent_preference">Parent preference</string>
+    <string name="summary_parent_preference">Toggling this preference will change the enabled state of the preference below</string>
+
+    <string name="title_child_preference">Child preference</string>
+    <string name="summary_child_preference">The enabled state of this preference is controlled by the preference above</string>
+
+    <string name="title_toggle_summary_preference">Variable summary preference</string>
+    <string name="summary_on_toggle_summary_preference">On! :) - the summary of this preference changes depending on its state</string>
+    <string name="summary_off_toggle_summary_preference">Off! :( - the summary of this preference changes depending on its state</string>
+
+    <string name="title_copyable_preference">Copyable preference</string>
+    <string name="summary_copyable_preference">Long press on this preference to copy its summary</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="hello">
+    <![CDATA[
+    <html>
+     <head></head>
+     <body style="text-align:justify;color:gray">
+      Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit. Nunc pellentesque, urna
+      nec hendrerit pellentesque, risus massa
+     </body>
+    </html>
+    ]]>
+    </string>
+</resources>

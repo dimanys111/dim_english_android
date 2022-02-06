@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:dist="http://schemas.android.com/apk/distribution"
+        package="com.example.shohanov_application">
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <dist:module dist:instant="true" />
+
+    <application
+            android:name=".MyApplication"
+            android:allowBackup="true"
+            android:icon="@drawable/word"
+            android:label="@string/app_name"
+            android:roundIcon="@drawable/word"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <receiver
+                android:name=".AlarmTestingReceiver"
+                android:enabled="true"
+                android:exported="true">
+        </receiver>
+
+        <receiver
+                android:name=".AlarmTimerReceiver"
+                android:enabled="true"
+                android:exported="true">
+        </receiver>
+
+        <receiver android:name=".MyWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                    android:name="android.appwidget.provider"
+                    android:resource="@xml/my_widget_info" />
+        </receiver>
+        <receiver
+                android:name=".MyBroadcastReceiver"
+                android:enabled="true"
+                android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="ru.LIKE_WORD_ACTION" />
+                <action android:name="ru.NEXT_WORD_ACTION" />
+                <action android:name="ru.NEXT_WORD_NOTIF_ACTION" />
+                <action android:name="ru.PLAY_WORD_ACTION" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+                android:name=".MyWidgetConfig"
+                android:configChanges="keyboardHidden|orientation|screenSize">
+
+            <intent-filter>
+                <action android:name="action android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+                android:name=".MainActivity"
+                android:configChanges="keyboardHidden|orientation|screenSize"
+                android:label="@string/app_name"
+                android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Accepts URIs that begin with "http://www.example.com/gizmos” -->
+                <data
+                        android:host="www.example.com"
+                        android:pathPrefix="/gizmos"
+                        android:scheme="http" />
+                <!-- note that the leading "/" is required for pathPrefix -->
+                <!-- Accepts URIs that begin with "example://gizmos” -->
+                <data
+                        android:host="gizmos"
+                        android:scheme="example" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

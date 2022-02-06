@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/text_wid_en"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#0000"
+                android:gravity="center"
+                android:contentDescription=""
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+
+        <TextView
+                android:id="@+id/text_wid_ru"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#0000"
+                android:gravity="center"
+                android:contentDescription=""
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+
+        <ImageView
+                android:id="@+id/imageView_word_widg"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_next" />
+
+        <ImageView
+                android:id="@+id/imageView_like_widg"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_like" />
+
+        <ImageView
+                android:id="@+id/imageView_sound_widg"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_sound" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+            android:title="@string/widgets">
+
+        <CheckBoxPreference
+                android:key="cb_notif_visib"
+                android:defaultValue="true"
+                android:summary=""
+                android:title="@string/title_cb_notif_visib" />
+
+        <CheckBoxPreference
+                android:key="cb_notif_sound"
+                android:defaultValue="false"
+                android:summary=""
+                android:title="@string/title_cb_notif_sound" />
+
+        <SwitchPreferenceCompat
+                android:key="switch_sound_word"
+                android:title="@string/title_switch_sound_word"
+                android:summary="@string/summary_switch_sound_word"/>
+
+        <SwitchPreferenceCompat
+                android:key="switch_sound_every_word"
+                android:title="@string/title_switch_sound_every_word"
+                android:summary="@string/summary_switch_sound_every_word"/>
+
+        <DropDownPreference
+                android:key="list_time_notif_show"
+                android:title="@string/title_list_time_notif_show"
+                android:entries="@array/times"
+                app:useSimpleSummaryProvider="true"
+                android:entryValues="@array/times_val"/>
+
+        <SeekBarPreference
+                android:key="seekbar_time_notif_min"
+                android:title="@string/title_seekbar_time_notif_min"
+                app:showSeekBarValue="true"
+                android:max="24"
+                android:defaultValue="7"/>
+        <SeekBarPreference
+                android:key="seekbar_time_notif_max"
+                android:title="@string/title_seekbar_time_notif_max"
+                app:showSeekBarValue="true"
+                android:max="24"
+                android:defaultValue="23"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>
